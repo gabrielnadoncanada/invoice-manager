@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Filament\AbstractResource;
 use App\Filament\Resources\CategoryResource\Pages;
 use App\Models\Category;
 use App\Models\Invoice;
@@ -19,7 +20,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 
-class CategoryResource extends Resource
+class CategoryResource extends AbstractResource
 {
     protected static ?string $model = Category::class;
 

@@ -17,6 +17,7 @@ class ManageBusiness extends SettingsPage
 
     protected static string $settings = BusinessSettings::class;
 
+    protected static ?string $title = 'Paramètres de l\'entreprise';
     protected static ?string $navigationGroup = 'Site';
 
     protected static ?int $navigationSort = 5;

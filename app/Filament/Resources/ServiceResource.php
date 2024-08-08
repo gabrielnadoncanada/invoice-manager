@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Filament\AbstractResource;
 use App\Filament\Resources\ServiceResource\Pages;
 use App\Models\Service;
 use Filament\Forms\Components\TextInput;
@@ -12,7 +13,7 @@ use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Table;
 
-class ServiceResource extends Resource
+class ServiceResource extends AbstractResource
 {
     protected static ?string $model = Service::class;
 

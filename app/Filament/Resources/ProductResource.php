@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Filament\AbstractResource;
 use App\Filament\Resources\ProductResource\Pages;
 use App\Models\Category;
 use App\Models\Product;
@@ -16,7 +17,7 @@ use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Table;
 
-class ProductResource extends Resource
+class ProductResource extends AbstractResource
 {
     protected static ?string $model = Product::class;
 

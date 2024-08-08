@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Filament\AbstractResource;
 use App\Filament\Fields\AddressForm;
 use App\Filament\Resources\ClientResource\Pages;
 use App\Models\Client;
@@ -19,7 +20,7 @@ use Filament\Tables\Table;
 use Squire\Models\Country;
 use Squire\Models\Region;
 
-class ClientResource extends Resource
+class ClientResource extends AbstractResource
 {
     protected static ?string $model = Client::class;
 

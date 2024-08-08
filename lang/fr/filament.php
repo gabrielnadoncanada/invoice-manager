@@ -2,7 +2,12 @@
 
 return [
     'models' => [
-
+        'client' => 'Client',
+        'invoice' => 'Facture',
+        'category' => 'Catégorie',
+        'company' => 'Entreprise',
+        'product' => 'Produit',
+        'service' => 'Service',
     ],
     'fields' => [
         'name' => 'Nom',
@@ -10,6 +15,7 @@ return [
             'name' => 'Nom',
 
         ],
+        'logo' => 'Logo',
         'date' => 'Date',
         'invoice_number' => 'Numéro de facture',
         'subtotal' => 'Sous-total',

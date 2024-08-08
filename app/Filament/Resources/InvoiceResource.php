@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Filament\AbstractResource;
 use App\Filament\Resources\InvoiceResource\Pages;
 use App\Models\Client;
 use App\Models\Invoice;
@@ -22,7 +23,7 @@ use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Table;
 
-class InvoiceResource extends Resource
+class InvoiceResource extends AbstractResource
 {
     protected static ?string $model = Invoice::class;
 
