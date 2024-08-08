@@ -1,0 +1,16 @@
+@config 'tailwind.config.js';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-family: "Inter";
+}
+
+html {
+    -webkit-print-color-adjust: exact;
+}
+@page {
+    margin: 0mm;
+}
